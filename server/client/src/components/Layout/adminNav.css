@@ -1,0 +1,63 @@
+.an-navbar{
+    display: flex;
+    background-color: #E4DED7;
+    flex-direction: column;
+    height: 100vh;
+    width: 20vw;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.an-navbar a{
+    text-decoration: none;
+}
+.an-top{
+    /* background-color:#372F29 ; */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    /* margin-bottom: 5vh; */
+}
+.an-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 1.5vh; */
+}
+.an-mid a{
+    width: 100%;
+    padding:10px 40px;
+}
+.an-mid .active{
+    background-color: #FAF9F6;
+}
+.an-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.logBtn{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #372F29;
+    padding: 10px 20px;
+    font-weight: 600;
+
+}
+.an-copy{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.an-bottom h6, .an-bottom h5{
+    font-weight: normal;
+    fill: #372F29;
+    display: flex;
+    align-items: center;
+}

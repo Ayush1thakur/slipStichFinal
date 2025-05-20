@@ -1,0 +1,109 @@
+.footer{
+    min-height: 40vh;
+    background-color: #372F29;
+    color: #FAF9F6;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer a{
+    text-decoration: none;
+    color: #FAF9F6;
+}
+.top{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.fleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fright{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.frhead{
+    color: #FAF9F6;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.frcontent{
+    font-size: 16px;
+    color: #FAF9F6;
+
+}
+.frcontent a{
+    text-decoration: underline;
+}
+.special-offer{
+    color: #FAF9F6;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    border: 1px solid #FAF9F6
+}
+.special-offer input , .special-offer input:focus, .special-offer input:focus:-webkit-autofill{
+    color: #FAF9F6;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    box-shadow: none;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:#FAF9F6;
+}
+.special-offer input::placeholder{
+    color: #FAF9F6;
+}
+.special-offer button{
+    border: none;
+    height: 100%;
+    aspect-ratio: 1/1;
+    width: fit-content;
+    font-size: 20px;
+    background-color: #FAF9F6;
+}
+
+.flbottom{
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+
+
+.footer-icon{
+    fill: #FAF9F6;
+    font-size: 16px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    color: #FAF9F6;
+}
+.nbl{
+    display: flex;
+    gap: 2rem;
+}
+.nbl a:hover, .nbl a.active{
+    text-decoration: underline;
+}
+.copyr{
+    color: #FAF9F6;
+    display: flex;
+    align-items: center;
+}

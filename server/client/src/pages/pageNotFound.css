@@ -1,0 +1,26 @@
+.pnf{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: #FAF9F6;
+}
+.oops{
+    font-weight: 900;
+    font-size: 15rem;
+    background: url("https://kawaiibabe.com/cdn/shop/files/crochet-flower-pots-decor-crochet-floral-flower-flowers-knit-753_grande.jpg?v=1725900935");
+    background-position:center;
+    background-size: cover;
+    background-clip: text;
+    color: #0000005f;
+}
+.pnf-title{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.pnf-content{
+    font-size: 20px;
+}
+

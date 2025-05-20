@@ -1,0 +1,68 @@
+/* CollectionPage.css */
+
+.collection-page {
+    height: 90vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+   
+  }
+  
+  .collection-title {
+    font-size: 3rem;
+    margin: 5rem 0;
+    font-weight: bold;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .card {
+    width: 330px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card .text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    /* color: #555; */
+  }
+  
+  .card a {
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  

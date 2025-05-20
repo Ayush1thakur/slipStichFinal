@@ -1,0 +1,172 @@
+.padd{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.pshow{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow-y: auto;
+    padding: 0.5rem;
+    /* background-color: #931c1c; */
+}
+.pcont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.pcard{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    /* background-color: #bd2e2e; */
+    padding-bottom: 1.5rem;
+}
+.pphoto{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+.pdata{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.pdataleft h2, .pdata h3{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.pdataleft h5{
+    font-weight: 400;
+}
+.pcard button{
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+/* create edit product */
+
+.cecont{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    gap: 1rem;
+    height: 100%;
+    
+}
+.cecont form{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow-y: auto;
+    height: 90vh;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    /* background-color: #ae1b1b; */
+}
+.cecont h3{
+    font-size: 1.3rem;
+    padding-bottom: 0.1rem;
+}
+.cecont p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.cecont .form-control{
+    font-size: .9rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+.pimg, .pdet{
+    width: 100%;
+}
+.edit-delete{
+    display: flex;
+    align-self: end;
+    gap: 1rem;
+}
+.proBtn{
+    min-width: 12rem;
+    font-size: 18px;
+    background-color:#E4DED7;
+    color: #372F29;
+    font-weight: 600;
+    border:1px solid #372F29;
+    padding: 10px;
+    cursor: pointer;
+}
+.fileimg{
+    display: none;
+}
+.fileimglabel{
+    height: 4.5rem;
+    width: 4.5rem;
+    aspect-ratio: 1/1;
+    border: 3px dashed #372F29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.fileimglabel:hover{
+    font-size: 2rem;
+
+}
+
+.image-preview{
+    height: 5rem;
+    /* background-color: #973636; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.image-preview input{
+    height: 4.9rem;
+    aspect-ratio: 1/1;
+}
+.preview-container{
+    display: flex;
+    position: relative;
+    height: 5rem;
+    aspect-ratio: 1/1;
+    padding: .3rem;
+    /* background-color: #dada2a; */
+}
+.remove-btn{
+    position: absolute;
+    z-index: 999;
+    background-color: #E4DED7;
+    padding: 2px;
+    padding: 0.3rem 0.3rem 0.2rem;
+    font-size: .5rem;
+    border-radius: 45%;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    aspect-ratio: 1/1;
+}
+.preview-container img{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+.edit-delete button{
+    font-size: 1.1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.tone-up:hover{
+    background-color: #372f293b;
+}
+.tone-down:hover{
+    scale: 0.95;
+}
