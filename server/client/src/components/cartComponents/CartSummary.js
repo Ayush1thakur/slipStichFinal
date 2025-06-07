@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
-import { useState } from "react";
 import { toast } from "react-toastify";
 
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
@@ -16,7 +16,8 @@ const CartSummary = ({ cart }) => {
       const stripe = await stripePromise;
       if (!stripe) throw new Error("Stripe failed to load");
 
-      const token = JSON.parse(localStorage.getItem("auth"))?.token;
+      const authData = localStorage.getItem("auth");
+      const token = authData ? JSON.parse(authData).token : null;
       if (!token) throw new Error("User not authenticated");
 
       const response = await axios.post(
@@ -44,10 +45,10 @@ const CartSummary = ({ cart }) => {
   };
 
   return (
-    <div className="cart-summary">
-      <h2>Total: ₹{total}</h2>
+    <div className="cart-summary" style={styles.container}>
+      <h2>Total: ₹{total.toFixed(2)}</h2>
       <button
-        className="checkout-btn"
+        style={styles.button}
         onClick={handleCheckout}
         disabled={loading || cart.length === 0}
       >
@@ -55,6 +56,26 @@ const CartSummary = ({ cart }) => {
       </button>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    padding: "1rem",
+    border: "1px solid #ddd",
+    borderRadius: "6px",
+    maxWidth: "400px",
+    margin: "20px auto",
+    textAlign: "center",
+  },
+  button: {
+    backgroundColor: "#6772e5",
+    color: "white",
+    border: "none",
+    padding: "12px 20px",
+    borderRadius: "4px",
+    cursor: "pointer",
+    fontSize: "16px",
+  },
 };
 
 export default CartSummary;

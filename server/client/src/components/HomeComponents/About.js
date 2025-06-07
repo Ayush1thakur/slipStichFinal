@@ -133,7 +133,7 @@ const About = () => {
             />
 
             <button type="submit" className="submitBtn tone-down">
-              Join Now
+              Send Enquiry
             </button>
           </form>
           <div className="jfr">

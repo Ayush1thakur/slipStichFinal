@@ -1,12 +1,27 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const SuccessPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Clear cart from localStorage or any state management if used
-    localStorage.removeItem("cart");
+    // Call backend API to clear the cart in DB after payment success
+    const clearUserCart = async () => {
+      try {
+        await axios.delete("/api/cart/clear", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`, // or however you send auth
+          },
+        });
+        // optionally clear local storage cart if you have any
+        localStorage.removeItem("cart");
+      } catch (error) {
+        console.error("Failed to clear cart:", error);
+      }
+    };
+
+    clearUserCart();
   }, []);
 
   return (

@@ -40,6 +40,7 @@ const Login = () => {
       setLoad(false);
       if (res.data.success) {
         toast.success(res.data.message);
+        console.log(res);
 
         // Set auth state first
         setAuth({
@@ -54,7 +55,7 @@ const Login = () => {
 
         // Navigate after state is updated
         if (res.data.user.role === 1) {
-          navigate(location.state || "/admin");
+          navigate("/admin");
         } else {
           navigate(location.state || "/");
         }
